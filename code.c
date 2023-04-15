@@ -66,3 +66,8 @@ void creatslist(SList& s1)
         inserttail(s1, p);
     }
 }
+
+void main()
+{
+    printf("day la ham main")
+}
