@@ -47,3 +47,22 @@ void showmenu()
     printf("\0. thoat ");
     printf("\n*****************************************");
 }
+
+void creatslist(SList& s1)
+{
+    int n;
+    ItemType x;
+    InitSList(s1);
+    do
+    {
+        printf("so phan tu cua danh sach (n>0): ");
+        scanf("%d", &n);
+    } while (n <= 0);
+    for (int i = 1; int i <= n; int i++)
+    {
+        printf("nhap phan tu thu %d la: ", i);
+        scanf("%d", &x);
+        SNode* p = creatsnode(x);
+        inserttail(s1, p);
+    }
+}
