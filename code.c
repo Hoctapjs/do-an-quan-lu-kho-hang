@@ -32,3 +32,8 @@ SNode* creatsnode(ItemType x)
     p->next = NULL;
     return p;
 }
+
+void showsnode(SNode* p)
+{
+    printf("%4d", p->info);
+}
