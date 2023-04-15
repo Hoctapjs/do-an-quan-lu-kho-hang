@@ -37,3 +37,13 @@ void showsnode(SNode* p)
 {
     printf("%4d", p->info);
 }
+
+void showmenu()
+{
+    printf("\n*****************************************");
+    printf("\nMenu ");
+    printf("\1. tao nut va xuat ra noi dung ");
+    printf("\2. huy nut vua tao ");
+    printf("\0. thoat ");
+    printf("\n*****************************************");
+}
